@@ -80,11 +80,14 @@ pub use amethyst_input as input;
 pub use amethyst_locale as locale;
 #[cfg(feature = "network")]
 pub use amethyst_network as network;
+#[cfg(not(feature = "empty"))]
 pub use amethyst_rendy as renderer;
 #[cfg(feature = "tiles")]
 pub use amethyst_tiles as tiles;
+#[cfg(not(feature = "empty"))]
 pub use amethyst_ui as ui;
 pub use amethyst_utils as utils;
+#[cfg(not(feature = "empty"))]
 pub use amethyst_window as window;
 pub use winit;
 

@@ -12,11 +12,14 @@
 pub use self::app_root_dir::*;
 
 pub mod app_root_dir;
+#[cfg(not(feature = "empty"))]
 pub mod auto_fov;
 pub mod circular_buffer;
 pub mod fps_counter;
+#[cfg(not(feature = "empty"))]
 pub mod ortho_camera;
 pub mod removal;
+#[cfg(not(feature = "empty"))]
 pub mod scene;
 pub mod tag;
 pub mod time_destroy;
